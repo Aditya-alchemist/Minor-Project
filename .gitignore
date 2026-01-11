@@ -1,0 +1,15 @@
+# Ignore backend / ML stuff
+models/
+dataset/
+backend/
+contracts/
+
+# Python
+venv/
+__pycache__/
+
+# Env
+.env
+
+# Node
+node_modules/
