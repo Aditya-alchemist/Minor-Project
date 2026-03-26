@@ -1,0 +1,23 @@
+# Core ML libraries (CPU-only for faster install)
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.5.1+cpu
+torchvision==0.20.1+cpu
+
+# Image processing
+pillow==10.4.0
+opencv-python-headless==4.10.0.84
+
+# Data science
+numpy==1.26.4
+matplotlib==3.9.0
+scikit-learn==1.5.1
+tqdm==4.66.4
+
+# Hugging Face (optional for now)
+# datasets==2.20.0
+# huggingface-hub==0.24.0
+
+# Web framework (for later - Phase 3)
+# flask==3.0.3
+# flask-cors==4.0.1
+# web3==6.20.0
