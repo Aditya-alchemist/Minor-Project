@@ -1,15 +1,16 @@
-# Ignore backend / ML stuff
-models/
+# Project data/artifacts
 dataset/
-backend/
-contracts/
+models/
+backend/uploads/
 
 # Python
 venv/
 __pycache__/
+**/__pycache__/
 
 # Env
 .env
+backend/.env
 
 # Node
 node_modules/
