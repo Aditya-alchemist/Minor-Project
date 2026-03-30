@@ -1,0 +1,112 @@
+ANTI-COUNTERFEIT SCANNER: HARDWARE + TRAINING/VALIDATION/TESTING REPORT
+Generated on: 2026-03-27
+
+============================================================
+1) HARDWARE SETUP
+============================================================
+Machine Name: ADITYA
+OS: Windows 10 Home Single Language (Version 2009, Build 26200)
+System Type: x64-based PC
+CPU: 12th Gen Intel(R) Core(TM) i7-1255U
+CPU Cores: 10
+Logical Processors (Threads): 12
+Max Clock Speed: 1700 MHz
+RAM (Total Physical Memory): 16,874,135,552 bytes (~15.72 GB)
+GPU 1: Intel(R) Iris(R) Xe Graphics
+GPU 1 VRAM: 1,073,741,824 bytes (~1.00 GB)
+GPU 1 Driver Version: 31.0.101.4255
+GPU 2: Sharing Monitor (display adapter entry)
+Training Device Used: CPU
+
+============================================================
+2) DATASET SUMMARY USED FOR TRAINING
+============================================================
+Train Genuine Images: 24
+Train Counterfeit Images: 24
+Total Train Images: 48
+Validation Genuine Images: 11
+Validation Counterfeit Images: 11
+Total Validation Images: 22
+
+============================================================
+3) TRAINING & VALIDATION RUN DETAILS
+============================================================
+Training Script: models/train_model.py
+Model Backbone: VGG16 (ImageNet pretrained)
+Epochs: 15
+Batch Size: 16
+Optimizer: Adam (lr=0.0001)
+Loss: CrossEntropyLoss
+
+Epoch-wise summary (Train Loss | Train Acc | Val Loss | Val Acc):
+Epoch 1:  0.5298 |  68.75% | 0.2778 | 100.00%
+Epoch 2:  0.0724 | 100.00% | 0.1123 | 100.00%
+Epoch 3:  0.0148 |  97.92% | 0.0000 | 100.00%
+Epoch 4:  0.0000 | 100.00% | 0.0077 | 100.00%
+Epoch 5:  0.0033 | 100.00% | 0.0000 | 100.00%
+Epoch 6:  0.0000 | 100.00% | 0.0000 | 100.00%
+Epoch 7:  0.0000 | 100.00% | 0.0000 | 100.00%
+Epoch 8:  0.0000 | 100.00% | 0.0000 | 100.00%
+Epoch 9:  0.0000 | 100.00% | 0.0000 | 100.00%
+Epoch 10: 0.0000 | 100.00% | 0.0000 | 100.00%
+Epoch 11: 0.0000 | 100.00% | 0.0000 | 100.00%
+Epoch 12: 0.0000 | 100.00% | 0.0000 | 100.00%
+Epoch 13: 0.0000 | 100.00% | 0.0000 | 100.00%
+Epoch 14: 0.0000 | 100.00% | 0.0000 | 100.00%
+Epoch 15: 0.0000 | 100.00% | 0.0000 | 100.00%
+
+Best Validation Accuracy: 100.00%
+Best Model Saved At: models/best_model.pth
+
+============================================================
+4) TRAINING AND VALIDATION SCREENSHOT + GRAPH
+============================================================
+Training/Validation Screenshot:
+- docs/screenshots/training_validation_screenshot.png
+
+Training/Validation Graph:
+- docs/screenshots/training_validation_graph.png
+
+Original Generated Graph (source):
+- models/training_curves.png
+
+============================================================
+5) TRAINING & TESTING ACCURACY RESULTS
+============================================================
+Evaluation Script: models/evaluate_model.py
+Evaluation Split Used as Test: dataset/val
+
+Training Accuracy: 100.00%
+Testing Accuracy: 100.00%
+
+Confusion Matrix on Test (rows=true, cols=pred):
+[[11, 0],
+ [ 0,11]]
+
+Class-wise Test Results:
+- Genuine: 11/11 correct (100.00%)
+- Counterfeit: 11/11 correct (100.00%)
+
+============================================================
+6) TRAINING & TESTING SCREENSHOTS + GRAPHS
+============================================================
+Training/Testing Accuracy Screenshot:
+- docs/screenshots/training_testing_accuracy_screenshot.png
+
+Training/Testing Accuracy Graph:
+- docs/screenshots/training_testing_accuracy_graph.png
+
+Testing Confusion Matrix Graph:
+- docs/screenshots/testing_confusion_matrix_graph.png
+
+Source Artifacts in models/:
+- models/train_test_accuracy_graph.png
+- models/testing_confusion_matrix.png
+- models/evaluation_metrics.json
+
+============================================================
+7) IMPORTANT NOTE
+============================================================
+This run achieved perfect (100%) metrics on both training and validation/test splits.
+Given the small dataset size (48 train, 22 validation/test), these results can indicate potential overfitting
+or an easy split. For stronger evidence, use a larger and more diverse unseen test set.

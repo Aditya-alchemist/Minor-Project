@@ -1,0 +1,7 @@
+# Raspberry Pi 5 inference dependencies
+# Install torch/torchvision from the official PyTorch ARM wheels suitable for your OS/Python.
+# Keep these unpinned to avoid wheel mismatch on ARM.
+torch
+torchvision
+pillow
+numpy
