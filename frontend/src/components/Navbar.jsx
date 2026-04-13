@@ -27,8 +27,10 @@ const Navbar = ({ walletAddress, onWalletConnect }) => {
 
 const styles = {
     navbar: {
-        background: 'white',
-        boxShadow: '0 2px 4px rgba(0,0,0,0.1)',
+        background: 'rgba(8, 14, 26, 0.78)',
+        backdropFilter: 'blur(14px)',
+        borderBottom: '1px solid rgba(110, 139, 191, 0.25)',
+        boxShadow: '0 10px 30px rgba(0,0,0,0.35)',
         padding: '1rem 0',
         position: 'sticky',
         top: 0,
@@ -47,12 +49,12 @@ const styles = {
     },
     logoText: {
         fontSize: '1.5rem',
-        color: '#2563eb',
+        color: '#72f1ff',
         margin: 0
     },
     logoSubtext: {
         fontSize: '0.8rem',
-        color: '#6b7280',
+        color: '#9fb0d2',
         margin: 0
     },
     navLinks: {
@@ -62,7 +64,7 @@ const styles = {
     },
     link: {
         textDecoration: 'none',
-        color: '#1f2937',
+        color: '#e8eefc',
         fontWeight: 500,
         transition: 'color 0.3s'
     }

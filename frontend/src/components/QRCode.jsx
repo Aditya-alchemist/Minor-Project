@@ -19,13 +19,14 @@ const styles = {
     container: {
         textAlign: 'center',
         padding: '1rem',
-        background: 'white',
+        background: '#111a2c',
+        border: '1px solid #2a3a5e',
         borderRadius: '12px',
-        boxShadow: '0 2px 8px rgba(0,0,0,0.1)'
+        boxShadow: '0 14px 32px rgba(0,0,0,0.35)'
     },
     label: {
         marginTop: '0.5rem',
-        color: '#6b7280',
+        color: '#9fb0d2',
         fontSize: '0.9rem'
     }
 };

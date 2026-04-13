@@ -5,27 +5,27 @@ const ResultCard = ({ type, title, children }) => {
         switch(type) {
             case 'success':
                 return {
-                    borderLeft: '4px solid #10b981',
+                    borderLeft: '4px solid #34d399',
                     icon: '✅',
-                    color: '#10b981'
+                    color: '#34d399'
                 };
             case 'error':
                 return {
-                    borderLeft: '4px solid #ef4444',
+                    borderLeft: '4px solid #fb7185',
                     icon: '❌',
-                    color: '#ef4444'
+                    color: '#fb7185'
                 };
             case 'warning':
                 return {
-                    borderLeft: '4px solid #f59e0b',
+                    borderLeft: '4px solid #fbbf24',
                     icon: '⚠️',
-                    color: '#f59e0b'
+                    color: '#fbbf24'
                 };
             default:
                 return {
-                    borderLeft: '4px solid #2563eb',
+                    borderLeft: '4px solid #36d1ff',
                     icon: 'ℹ️',
-                    color: '#2563eb'
+                    color: '#36d1ff'
                 };
         }
     };
@@ -62,10 +62,11 @@ const DetailItem = ({ label, value, link }) => (
 
 const styles = {
     card: {
-        background: 'white',
+        background: '#111a2c',
+        border: '1px solid #2a3a5e',
         padding: '2rem',
         borderRadius: '12px',
-        boxShadow: '0 2px 8px rgba(0,0,0,0.1)',
+        boxShadow: '0 14px 32px rgba(0,0,0,0.35)',
         marginTop: '1rem'
     },
     header: {
@@ -87,22 +88,22 @@ const styles = {
     },
     detailItem: {
         padding: '0.75rem 0',
-        borderBottom: '1px solid #e5e7eb',
+        borderBottom: '1px solid #2a3a5e',
         display: 'flex',
         flexDirection: 'column',
         gap: '0.25rem'
     },
     label: {
         fontWeight: 600,
-        color: '#6b7280',
+        color: '#9fb0d2',
         fontSize: '0.9rem'
     },
     value: {
-        color: '#1f2937',
+        color: '#e8eefc',
         wordBreak: 'break-all'
     },
     link: {
-        color: '#2563eb',
+        color: '#36d1ff',
         textDecoration: 'none'
     }
 };

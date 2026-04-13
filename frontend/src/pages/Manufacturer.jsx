@@ -314,7 +314,8 @@ const styles = {
         maxWidth: '1200px',
         margin: '0 auto',
         padding: '2rem 20px',
-        minHeight: 'calc(100vh - 200px)'
+        minHeight: 'calc(100vh - 200px)',
+        color: '#d7e3fb'
     },
     header: {
         textAlign: 'center',
@@ -323,17 +324,19 @@ const styles = {
     walletInfo: {
         marginTop: '1rem',
         padding: '1rem',
-        background: '#f0fdf4',
+        background: 'rgba(52, 211, 153, 0.12)',
+        border: '1px solid rgba(52, 211, 153, 0.3)',
         borderRadius: '8px',
-        color: '#059669',
+        color: '#34d399',
         display: 'inline-block'
     },
     walletWarning: {
         marginTop: '1rem',
         padding: '1rem',
-        background: '#fef2f2',
+        background: 'rgba(251, 113, 133, 0.12)',
+        border: '1px solid rgba(251, 113, 133, 0.28)',
         borderRadius: '8px',
-        color: '#dc2626',
+        color: '#fb7185',
         display: 'inline-block'
     },
     mainContent: {
@@ -342,10 +345,11 @@ const styles = {
         gap: '2rem'
     },
     formSection: {
-        background: 'white',
+        background: '#111a2c',
+        border: '1px solid #2a3a5e',
         padding: '2rem',
         borderRadius: '12px',
-        boxShadow: '0 2px 8px rgba(0,0,0,0.1)'
+        boxShadow: '0 14px 32px rgba(0,0,0,0.35)'
     },
     formGroup: {
         marginBottom: '1.5rem'
@@ -354,12 +358,14 @@ const styles = {
         display: 'block',
         marginBottom: '0.5rem',
         fontWeight: 600,
-        color: '#1f2937'
+        color: '#e8eefc'
     },
     input: {
         width: '100%',
         padding: '0.75rem',
-        border: '2px solid #e5e7eb',
+        border: '1px solid #2a3a5e',
+        background: '#0b1424',
+        color: '#e8eefc',
         borderRadius: '8px',
         fontSize: '1rem',
         transition: 'border-color 0.3s'
@@ -367,13 +373,13 @@ const styles = {
     hint: {
         display: 'block',
         marginTop: '0.25rem',
-        color: '#6b7280',
+        color: '#9fb0d2',
         fontSize: '0.875rem'
     },
     button: {
         width: '100%',
         padding: '1rem',
-        background: '#2563eb',
+        background: 'linear-gradient(135deg, #00aee6 0%, #3b82f6 100%)',
         color: 'white',
         border: 'none',
         borderRadius: '8px',
@@ -390,17 +396,19 @@ const styles = {
     successMessage: {
         marginTop: '1.5rem',
         padding: '1rem',
-        background: '#f0fdf4',
+        background: 'rgba(52, 211, 153, 0.12)',
+        border: '1px solid rgba(52, 211, 153, 0.25)',
         borderRadius: '8px',
-        color: '#059669',
+        color: '#34d399',
         textAlign: 'center'
     },
     productList: {
         marginTop: '2rem',
-        background: 'white',
+        background: '#111a2c',
+        border: '1px solid #2a3a5e',
         padding: '1.5rem',
         borderRadius: '12px',
-        boxShadow: '0 2px 8px rgba(0,0,0,0.1)'
+        boxShadow: '0 14px 32px rgba(0,0,0,0.35)'
     },
     products: {
         marginTop: '1rem',
@@ -410,7 +418,8 @@ const styles = {
     },
     productItem: {
         padding: '0.75rem',
-        background: '#f9fafb',
+        background: '#0b1424',
+        border: '1px solid #243657',
         borderRadius: '8px',
         display: 'flex',
         alignItems: 'center',
@@ -421,7 +430,8 @@ const styles = {
     },
     productId: {
         fontFamily: 'monospace',
-        fontSize: '0.9rem'
+        fontSize: '0.9rem',
+        color: '#a7c7ff'
     }
 };
 

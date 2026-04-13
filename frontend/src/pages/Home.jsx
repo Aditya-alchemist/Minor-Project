@@ -154,7 +154,7 @@ const Home = () => {
 
 const styles = {
     hero: {
-        background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+        background: 'linear-gradient(125deg, #0b1020 0%, #0f1c34 45%, #132b4a 100%)',
         color: 'white',
         padding: '4rem 0'
     },
@@ -173,7 +173,8 @@ const styles = {
     heroSubtitle: {
         fontSize: '1.2rem',
         marginBottom: '2rem',
-        opacity: 0.9
+        opacity: 0.92,
+        color: '#bdd1f5'
     },
     buttonGroup: {
         display: 'flex',
@@ -190,12 +191,13 @@ const styles = {
         transition: 'all 0.3s'
     },
     primaryButton: {
-        background: '#2563eb',
+        background: 'linear-gradient(135deg, #00aee6 0%, #0ea5e9 100%)',
         color: 'white'
     },
     secondaryButton: {
-        background: 'white',
-        color: '#2563eb'
+        background: '#0e182b',
+        border: '1px solid #2a3a5e',
+        color: '#9ce9ff'
     },
     featureCards: {
         display: 'grid',
@@ -203,11 +205,12 @@ const styles = {
         gap: '1rem'
     },
     featureCard: {
-        background: 'rgba(255, 255, 255, 0.1)',
+        background: 'rgba(18, 34, 62, 0.62)',
         backdropFilter: 'blur(10px)',
         padding: '1.5rem',
         borderRadius: '12px',
-        border: '1px solid rgba(255, 255, 255, 0.2)'
+        border: '1px solid rgba(122, 164, 236, 0.25)',
+        boxShadow: '0 8px 24px rgba(0, 0, 0, 0.25)'
     },
     featureIcon: {
         fontSize: '2rem',
@@ -216,13 +219,13 @@ const styles = {
     },
     features: {
         padding: '4rem 0',
-        background: 'white'
+        background: '#070f1d'
     },
     sectionTitle: {
         textAlign: 'center',
         fontSize: '2.5rem',
         marginBottom: '3rem',
-        color: '#1f2937'
+        color: '#e8eefc'
     },
     grid: {
         display: 'grid',
@@ -233,12 +236,14 @@ const styles = {
         textAlign: 'center',
         padding: '2rem',
         borderRadius: '12px',
-        background: '#f9fafb'
+        background: '#111a2c',
+        border: '1px solid #25375d',
+        color: '#c9d6f2'
     },
     featureNumber: {
         width: '60px',
         height: '60px',
-        background: '#2563eb',
+        background: 'linear-gradient(135deg, #00aee6 0%, #3b82f6 100%)',
         color: 'white',
         borderRadius: '50%',
         display: 'flex',
@@ -249,7 +254,7 @@ const styles = {
         margin: '0 auto 1rem'
     },
     stats: {
-        background: '#1f2937',
+        background: '#040a13',
         color: 'white',
         padding: '3rem 0'
     },
@@ -264,11 +269,13 @@ const styles = {
     },
     statNumber: {
         fontSize: '3rem',
-        color: '#10b981',
+        color: '#36d1ff',
         marginBottom: '0.5rem'
     },
     about: {
-        padding: '4rem 0'
+        padding: '4rem 0',
+        background: '#081225',
+        color: '#c7d3ee'
     },
     aboutGrid: {
         display: 'grid',
@@ -286,19 +293,20 @@ const styles = {
         marginTop: '1rem'
     },
     badge: {
-        background: '#2563eb',
+        background: '#132644',
+        border: '1px solid #2b4e82',
         color: 'white',
         padding: '0.5rem 1rem',
         borderRadius: '20px',
         fontSize: '0.9rem'
     },
     contractLink: {
-        color: '#2563eb',
+        color: '#36d1ff',
         textDecoration: 'none',
         fontWeight: 600
     },
     footer: {
-        background: '#1f2937',
+        background: '#040a13',
         color: 'white',
         padding: '2rem 0',
         textAlign: 'center'

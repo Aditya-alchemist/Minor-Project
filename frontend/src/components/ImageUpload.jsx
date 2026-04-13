@@ -34,7 +34,7 @@ const ImageUpload = ({ onImageSelect, preview }) => {
         <div 
             style={{
                 ...styles.uploadArea,
-                borderColor: dragActive ? '#2563eb' : '#e5e7eb'
+                borderColor: dragActive ? '#36d1ff' : '#2a3a5e'
             }}
             onDragEnter={handleDrag}
             onDragLeave={handleDrag}
@@ -63,7 +63,8 @@ const ImageUpload = ({ onImageSelect, preview }) => {
 const styles = {
     uploadArea: {
         position: 'relative',
-        border: '2px dashed #e5e7eb',
+        border: '2px dashed #2a3a5e',
+        background: '#0b1424',
         borderRadius: '12px',
         padding: '2rem',
         textAlign: 'center',
@@ -84,7 +85,8 @@ const styles = {
         cursor: 'pointer'
     },
     placeholder: {
-        pointerEvents: 'none'
+        pointerEvents: 'none',
+        color: '#aebfe1'
     },
     icon: {
         fontSize: '3rem',
@@ -94,7 +96,8 @@ const styles = {
     preview: {
         maxWidth: '100%',
         maxHeight: '300px',
-        borderRadius: '8px'
+        borderRadius: '8px',
+        border: '1px solid #2a3a5e'
     }
 };
 

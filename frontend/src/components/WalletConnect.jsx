@@ -21,7 +21,7 @@ const WalletConnect = ({ walletAddress, onConnect }) => {
             disabled={isConnecting || walletAddress}
             style={{
                 ...styles.button,
-                background: walletAddress ? '#10b981' : '#2563eb'
+                background: walletAddress ? '#14b884' : 'linear-gradient(135deg, #00aee6 0%, #3b82f6 100%)'
             }}
         >
             {isConnecting ? 'Connecting...' : 

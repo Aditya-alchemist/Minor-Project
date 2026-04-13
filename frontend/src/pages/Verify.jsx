@@ -242,8 +242,8 @@ const Verify = ({ walletAddress, contract }) => {
                                     />
                                 </div>
                                 <div style={{display: 'flex', justifyContent: 'space-between', marginTop: '0.5rem', fontSize: '0.875rem'}}>
-                                    <span style={{color: '#10b981'}}>Genuine: {result.aiAnalysis.genuine_prob.toFixed(2)}%</span>
-                                    <span style={{color: '#ef4444'}}>Counterfeit: {result.aiAnalysis.counterfeit_prob.toFixed(2)}%</span>
+                                    <span style={{color: '#34d399'}}>Genuine: {result.aiAnalysis.genuine_prob.toFixed(2)}%</span>
+                                    <span style={{color: '#fb7185'}}>Counterfeit: {result.aiAnalysis.counterfeit_prob.toFixed(2)}%</span>
                                 </div>
                             </div>
 
@@ -285,8 +285,9 @@ const Verify = ({ walletAddress, contract }) => {
 
                             <div style={{
                                 ...styles.message,
-                                background: result.type === 'success' ? '#f0fdf4' : '#fef2f2',
-                                color: result.type === 'success' ? '#059669' : '#dc2626'
+                                background: result.type === 'success' ? 'rgba(52, 211, 153, 0.12)' : 'rgba(251, 113, 133, 0.12)',
+                                color: result.type === 'success' ? '#34d399' : '#fb7185',
+                                border: result.type === 'success' ? '1px solid rgba(52, 211, 153, 0.32)' : '1px solid rgba(251, 113, 133, 0.32)'
                             }}>
                                 {result.type === 'success' ? 
                                     '✓ This product appears to be genuine! All checks passed.' :
@@ -354,7 +355,8 @@ const styles = {
         maxWidth: '1200px',
         margin: '0 auto',
         padding: '2rem 20px',
-        minHeight: 'calc(100vh - 200px)'
+        minHeight: 'calc(100vh - 200px)',
+        color: '#d7e3fb'
     },
     header: {
         textAlign: 'center',
@@ -363,17 +365,19 @@ const styles = {
     walletInfo: {
         marginTop: '1rem',
         padding: '1rem',
-        background: '#f0fdf4',
+        background: 'rgba(52, 211, 153, 0.12)',
+        border: '1px solid rgba(52, 211, 153, 0.3)',
         borderRadius: '8px',
-        color: '#059669',
+        color: '#34d399',
         display: 'inline-block'
     },
     walletWarning: {
         marginTop: '1rem',
         padding: '1rem',
-        background: '#fef2f2',
+        background: 'rgba(251, 113, 133, 0.12)',
+        border: '1px solid rgba(251, 113, 133, 0.28)',
         borderRadius: '8px',
-        color: '#dc2626',
+        color: '#fb7185',
         display: 'inline-block'
     },
     mainContent: {
@@ -382,10 +386,11 @@ const styles = {
         gap: '2rem'
     },
     formSection: {
-        background: 'white',
+        background: '#111a2c',
+        border: '1px solid #2a3a5e',
         padding: '2rem',
         borderRadius: '12px',
-        boxShadow: '0 2px 8px rgba(0,0,0,0.1)'
+        boxShadow: '0 14px 32px rgba(0,0,0,0.35)'
     },
     formGroup: {
         marginBottom: '1.5rem'
@@ -394,25 +399,27 @@ const styles = {
         display: 'block',
         marginBottom: '0.5rem',
         fontWeight: 600,
-        color: '#1f2937'
+        color: '#e8eefc'
     },
     input: {
         width: '100%',
         padding: '0.75rem',
-        border: '2px solid #e5e7eb',
+        border: '1px solid #2a3a5e',
+        background: '#0b1424',
+        color: '#e8eefc',
         borderRadius: '8px',
         fontSize: '1rem'
     },
     hint: {
         display: 'block',
         marginTop: '0.25rem',
-        color: '#6b7280',
+        color: '#9fb0d2',
         fontSize: '0.875rem'
     },
     button: {
         width: '100%',
         padding: '1rem',
-        background: '#2563eb',
+        background: 'linear-gradient(135deg, #00aee6 0%, #3b82f6 100%)',
         color: 'white',
         border: 'none',
         borderRadius: '8px',
@@ -428,7 +435,7 @@ const styles = {
     progressBar: {
         width: '100%',
         height: '8px',
-        background: '#e5e7eb',
+        background: '#1a2a46',
         borderRadius: '4px',
         overflow: 'hidden'
     },
@@ -444,17 +451,19 @@ const styles = {
     },
     productInfoCard: {
         marginTop: '1rem',
-        background: 'white',
+        background: '#111a2c',
+        border: '1px solid #2a3a5e',
         padding: '1.5rem',
         borderRadius: '12px',
-        boxShadow: '0 2px 8px rgba(0,0,0,0.1)'
+        boxShadow: '0 14px 32px rgba(0,0,0,0.35)'
     },
     historyCard: {
         marginTop: '1rem',
-        background: 'white',
+        background: '#111a2c',
+        border: '1px solid #2a3a5e',
         padding: '1.5rem',
         borderRadius: '12px',
-        boxShadow: '0 2px 8px rgba(0,0,0,0.1)'
+        boxShadow: '0 14px 32px rgba(0,0,0,0.35)'
     },
     historyList: {
         marginTop: '1rem',
@@ -466,7 +475,8 @@ const styles = {
         display: 'flex',
         gap: '0.75rem',
         padding: '0.75rem',
-        background: '#f9fafb',
+        background: '#0b1424',
+        border: '1px solid #243657',
         borderRadius: '8px'
     },
     historyIcon: {
@@ -481,7 +491,7 @@ const styles = {
     },
     historyMeta: {
         fontSize: '0.8rem',
-        color: '#6b7280'
+        color: '#9fb0d2'
     }
 };
 
